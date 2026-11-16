@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Struktur Perulangan JavaScript</title>
+</head>
+<body>
+  <h1>Struktur Perulangan JavaScript</h1>
+
+  <h3>For Loop: angka 1 sampai 10</h3>
+  <p id="hasilFor"></p>
+
+  <h3>While Loop: jumlah 1 sampai 10</h3>
+  <p id="hasilWhile"></p>
+
+  <h3>Do-While Loop: kelipatan 5 sampai 50</h3>
+  <p id="hasilDoWhile"></p>
+
+  <script>
+    // For
+    let teks = "";
+    for (let i = 1; i <= 10; i++) {
+      teks += i + " ";
+    }
+    document.getElementById("hasilFor").textContent = teks;
+
+    // While
+    let n = 1, total = 0;
+    while (n <= 10) {
+      total += n;
+      n++;
+    }
+    document.getElementById("hasilWhile").textContent = "Total: " + total;
+
+    // Do-While
+    let k = 5, kelipatan = "";
+    do {
+      kelipatan += k + " ";
+      k += 5;
+    } while (k <= 50);
+    document.getElementById("hasilDoWhile").textContent = kelipatan;
+  </script>
+</body>
+</html>
